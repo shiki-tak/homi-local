@@ -1,2 +1,5 @@
 output/
-homi-output/
+homi-output*
+homi_output_*
+build_work
+bin

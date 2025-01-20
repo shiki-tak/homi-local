@@ -9,6 +9,7 @@ if [ "$#" -lt 1 ]; then
     echo "  start"
     echo "  stop"
     echo "  clean"
+    echo "  build_binaries"
     echo "  restart [CN_ID]"
     echo "  refresh"
     exit 22
@@ -48,6 +49,9 @@ case "$1" in
     ;;
   "init")
     init
+    ;;
+  "build_binaries")
+    build_binaries
     ;;
   *)
     echo "no such option"

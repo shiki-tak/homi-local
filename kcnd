@@ -125,7 +125,7 @@ __check_option() {
     fi
 
     set -f
-    OPTIONS=""
+    OPTIONS="--maxRequestContentLength 2000000"
 
     if [[ ! -z $METRICS ]] && [[ $METRICS -eq 1 ]]; then
         OPTIONS="$OPTIONS --metrics"
